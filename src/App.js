@@ -74,9 +74,9 @@ class App extends Component {
           {
             this.state.pictures.map(picture => (
             <div>
-              <img src={picture.image} />
+              <img className="fotoCargada" src={picture.image} />
               <br/>
-              <img className="fotoLogin" src={picture.photoURL} alt={picture.displayName} />
+              <img className="fotoUser" src={picture.photoURL} alt={picture.displayName} />
               <br/>
               <span>{picture.displayName}</span>
             </div>
@@ -96,7 +96,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Ventas UAM</h2>
+          <h2>Insta Album</h2>
         </div>
         <p className="App-intro">
           {this.renderLoginButton()}
