@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactBootstrap from 'react-bootstrap';
 import firebase from 'firebase';
 import './index.css';
 import App from './App';
@@ -10,7 +11,7 @@ firebase.initializeApp({
     authDomain: "ventas-uam.firebaseapp.com",
     databaseURL: "https://ventas-uam.firebaseio.com",
     projectId: "ventas-uam",
-    storageBucket: "",
+    storageBucket: "ventas-uam.appspot.com",
     messagingSenderId: "723199275402"
 });
 
